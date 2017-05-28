@@ -1,22 +1,28 @@
 module.exports = function(grunt){
 
     grunt.initConfig({
-
-        // ŠÄ‹ƒ^ƒXƒN
+      connect: {
+        site: { // ï¿½Iï¿½vï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ’ï¿½ï¿½Ìˆ×Aï¿½ï¿½ï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½g
+        }
+      },
+        // ï¿½Äï¿½ï¿½^ï¿½Xï¿½N
         watch : {
             js : {
                 files: '_jsdev/**/*.js',
-                tasks : ['uglify:common'] // uglifyƒ^ƒXƒN‚ğÀsBcommon‚ğ
+                tasks : ['uglify:common'] // uglifyï¿½^ï¿½Xï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½sï¿½Bcommonï¿½ï¿½
             },
             scss : {
                 files: '_scss/**/*.scss',
-                tasks : ['compass'] // uglifyƒ^ƒXƒN‚ğÀsBcommon‚ğ
+                tasks : ['compass'] // uglifyï¿½^ï¿½Xï¿½Nï¿½ï¿½ï¿½ï¿½ï¿½sï¿½Bcommonï¿½ï¿½
+            },
+            options: {
+                livereload: true // ï¿½ÏXï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îƒï¿½ï¿½ï¿½ï¿½[ï¿½hï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             }
         },
 
-        // js‚Ìuglifyiˆ³kjƒ^ƒXƒN
+        // jsï¿½ï¿½uglifyï¿½iï¿½ï¿½ï¿½kï¿½jï¿½^ï¿½Xï¿½N
         uglify : {
-            common :{ 
+            common :{
                 files:{
                   'common/js/global.js' : [
                       '_jsdev/global/*.js'
@@ -48,12 +54,13 @@ module.exports = function(grunt){
     })
 
 
-    // ƒ^ƒXƒN“Ç‚İ‚İ
+    // ï¿½^ï¿½Xï¿½Nï¿½Ç‚İï¿½ï¿½ï¿½
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
-    // ƒfƒtƒHƒ‹ƒgƒ^ƒXƒN‚Ìİ’è
-    grunt.registerTask('default',['watch']);
+    // ï¿½fï¿½tï¿½Hï¿½ï¿½ï¿½gï¿½^ï¿½Xï¿½Nï¿½Ìİ’ï¿½
+    grunt.registerTask('default',['connect','watch']);
 }

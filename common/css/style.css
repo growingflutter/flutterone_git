@@ -1,6 +1,97 @@
+@charset "UTF-8";
 /* line 1, ../../_scss/style.scss */
+* {
+  font-size: inherit;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: normal;
+  list-style-type: none; }
+
+/* line 10, ../../_scss/style.scss */
 body {
-  background: white; }
-/* line 3, ../../_scss/style.scss */
-body div {
-  padding: 20px; }
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: #f7f7f7;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif; }
+
+/* line 18, ../../_scss/style.scss */
+div#catch {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0; }
+
+/* line 24, ../../_scss/style.scss */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 50px; }
+/* line 28, ../../_scss/style.scss */
+header .title {
+  font-size: 30px;
+  letter-spacing: 5px; }
+/* line 32, ../../_scss/style.scss */
+header .sub {
+  font-size: 11px;
+  margin-top: 5px; }
+
+/* line 38, ../../_scss/style.scss */
+#headtitle {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff; }
+
+/* line 44, ../../_scss/style.scss */
+#mainBody {
+  background-color: #f7f7f7; }
+/* line 46, ../../_scss/style.scss */
+#mainBody li {
+  width: 250px;
+  margin: 15px;
+  background-color: #fff;
+  float: left; }
+
+/* line 54, ../../_scss/style.scss */
+#headtitle {
+  padding: 30px; }
+/* line 55, ../../_scss/style.scss */
+#headtitle a {
+  color: #fff;
+  text-decoration: none; }
+/* line 63, ../../_scss/style.scss */
+#headtitle .title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding: 20px 0; }
+
+/* line 72, ../../_scss/style.scss */
+.flex-container {
+  -webkit-flex-wrap: wrap;
+  /* Safari */
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  /* Safari */
+  justify-content: space-around; }
+/* line 79, ../../_scss/style.scss */
+.flex-container li {
+  padding-top: 100px; }
+/* line 80, ../../_scss/style.scss */
+.flex-container li a {
+  color: #333;
+  text-decoration: none; }
+/* line 85, ../../_scss/style.scss */
+.flex-container li p.date {
+  font-size: 12px;
+  margin: 5px 10px; }
+/* line 89, ../../_scss/style.scss */
+.flex-container li .maintitle {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 5px 10px; }
+/* line 95, ../../_scss/style.scss */
+.flex-container li .content {
+  font-size: 12px;
+  margin: 5px 10px; }

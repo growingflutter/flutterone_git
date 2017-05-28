@@ -1,6 +1,101 @@
+*{
+    font-size: inherit;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: normal;
+    list-style-type: none;
+}
 body{
-    background: white;
-    div{
-        padding : 20px;
+    padding:0 !important;
+    margin:0 !important;
+    background-color:#f7f7f7;
+    font-family:'Lucida Grande',
+ 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',
+ Meiryo, メイリオ, sans-serif;
+}
+div#catch{
+    position: fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+}
+header{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 50px;
+    .title{
+        font-size:30px;
+        letter-spacing: 5px;
+    }
+    .sub{
+        font-size: 11px;
+        margin-top: 5px;
+    }
+}
+
+#headtitle{
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    
+}
+
+#mainBody{
+    background-color: #f7f7f7;
+    li{
+        width: 250px;
+        margin:15px;
+        background-color: #fff;
+        float: left;
+    }
+}
+
+#headtitle{
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    padding: 30px;
+    .date{
+        
+    }
+    .title{
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        padding: 20px 0;
+    }
+}
+
+
+.flex-container {
+  -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap:         wrap;
+
+  -webkit-justify-content: space-around; /* Safari */
+  justify-content:         space-around;
+
+    li{
+        a{
+            color: #333;
+            text-decoration: none;
+        }
+        padding-top: 100px;
+        p.date{
+            font-size: 12px;
+            margin: 5px 10px;
+        }
+        .maintitle{
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin: 5px 10px;
+        }
+        .content{
+            font-size: 12px;
+            margin: 5px 10px;
+        }
+        
     }
 }
