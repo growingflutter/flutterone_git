@@ -95,3 +95,11 @@ header .sub {
 .flex-container li .content p {
   font-size: 12px;
   margin: 5px 10px; }
+
+/* line 105, ../../_scss/style.scss */
+#secondary {
+  position: absolute;
+  right: 0;
+  top: 340px;
+  width: 200px;
+  background-color: #fff; }
